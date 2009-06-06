@@ -1,0 +1,157 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background-color: #7694C1;
+	font-family: sans-serif;
+	/*text-align: center;*/
+}
+
+img
+{
+	border: 0;
+	padding: 0;
+}
+
+a
+{
+	text-decoration: none;
+	font-weight: bold;
+	color: #000000;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+#page
+{
+	width: 90%;
+	margin: auto;
+	margin-top: 25px;
+	background-color: #EFEFEF;
+	border-width: 1px;
+	border-color: #000000;
+	border-style: solid;
+}
+
+#header
+{
+	padding-left: 10px;
+	padding-top: 5px;
+}
+
+#menu
+{
+	width: 100%;
+	background-color: #DDDDDD;
+	border-width: 1px;
+	border-color: #000000;
+	border-style: solid;
+	border-left: 0;
+	border-right: 0;
+	padding: 0;
+	float: left;
+}
+
+#menu ul
+{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#menu li
+{
+	padding: 3px 25px 3px 25px;
+	border-right: 1px solid #000000;
+	float: left;
+	text-decoration: none;
+}
+
+#menu a
+{
+	color: #000000;
+}
+
+#menu li:hover
+{
+	background-color: #999999;
+	text-decoration: underline;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+#menu li:hover a
+{
+	color: #FFFFFF;
+}
+
+#body
+{
+	padding: 10px;
+	margin-top: 25px;
+}
+
+#body .item
+{
+}
+
+#body h1
+{
+    margin: 0;
+    padding: 0;
+	font-size: 16pt;
+	width: 30%;
+	border-bottom: 2px solid #000000;
+}
+
+#body .content
+{
+	padding: 10px;
+}
+
+.complete
+{
+	text-decoration: line-through;
+}
+
+.monospace
+{
+    font-family: monospace;
+}
+
+#footer
+{
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #000000;
+	padding: 5px;
+	text-align: center;
+	font-size: 10pt;
+	background-color: #DDDDDD;
+	clear: both;
+	vertical-align: center;
+}
+
+#logos
+{
+	text-align: center;
+	padding-top: 10px;
+	margin-bottom: 15px;
+}
+
+#footnote
+{
+	vertical-align: bottom;
+	font-size: 10pt;
+	clear: both;
+}
+
+.image-right
+{
+	font-size: 8pt;
+	float: right;
+	padding-bottom: 10px;
+}
