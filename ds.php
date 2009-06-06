@@ -25,6 +25,5 @@
             </div>
             <?php include_once("footer.php"); ?>
         </div>
-        <?php include_once("logos.php"); ?>
     </body>
 </html>

@@ -3,7 +3,7 @@
     
     $main_pages = array("home" => "Home", "aboutme" => "About Me", "satisfied_clients" => "Satisfied Clients", "calender" => "Calender", "rates" => "Rates", "contact_info" => "Contact Info", "not_found" => "Not Found");
     $style = "default";
-    $site_path = "";
+    $site_path = "/vanessasdogsitting.com";
     $index_path = $site_path . "/ds.php";
 
     $texy = new Texy();
