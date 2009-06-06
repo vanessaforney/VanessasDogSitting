@@ -1,7 +1,7 @@
 <?php
     require_once("texy/texy.php");
     
-    $main_pages = array("home" => "Home", "setup" => "Setup", "download" => "Download", "screenshots" => "Screenshots", "todo" => "To Do List", "contact" => "Contact", "not_found" => "Not Found");
+    $main_pages = array("home" => "Home", "aboutme" => "About Me", "satisfied_clients" => "Satisfied Clients", "calender" => "Calender", "rates" => "Rates", "contact_info" => "Contact Info", "not_found" => "Not Found");
     $style = "default";
     $site_path = "";
     $index_path = $site_path . "/ds.php";
