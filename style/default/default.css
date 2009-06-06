@@ -2,7 +2,7 @@ body
 {
 	margin: 0;
 	padding: 0;
-	background-color: #7694C1;
+	background-color: #FFFFFF;
 	font-family: sans-serif;
 	/*text-align: center;*/
 }
@@ -57,7 +57,7 @@ a:hover
 
 #menu ul
 {
-	list-style: none;
+	/*list-style: none;*/
 	padding: 0;
 	margin: 0;
 }
