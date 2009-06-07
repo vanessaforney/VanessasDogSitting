@@ -8,7 +8,14 @@
 
     $texy = new Texy();
 
-    $css = $site_path . "/style/" . $style . "/" . $style . ".css";
+    if ($_GET["cssdebug"] == "true")
+    {
+        $css = "file://User/Michael/Development/vanessa_dogsitting/style/default/default.css";
+    }
+    else
+    {
+        $css = $site_path . "/style/" . $style . "/" . $style . ".css";
+    }
     $image_dir = $site_path . "/style/" . $style . "/images";
     
     $path = explode("/", $_SERVER['ORIG_PATH_INFO']);
