@@ -10,7 +10,7 @@
 
     if ($_GET["cssdebug"] == "true")
     {
-        $css = "file:///Users/Michael/Development/vanessa_dogsitting/style/default/default.css";
+        $css = "file:///C:/Users/Michael/Development/vanessa_dogsitting/style/default/default.css";
     }
     else
     {
