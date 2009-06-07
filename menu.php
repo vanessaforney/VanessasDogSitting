@@ -10,7 +10,7 @@
                     {
                         continue;
                     }
-                    echo "<li><a href=\"" . $index_path . "/" . $page_id . "\">" . $page_title . "</a></li>";
+                    echo "<div><li><a href=\"" . $index_path . "/" . $page_id . "\"><img src=\"" . $image_dir . "/" . $page_title . ".png\" /></a></li></div>";
                 }
             }
             generate_menu();

@@ -27,47 +27,69 @@ a:hover
 
 #page
 {
-	width: 90%;
+	width: 1000px;
 	margin: auto;
 	margin-top: 25px;
-	background-color: #EFEFEF;
-	border-width: 1px;
-	border-color: #000000;
-	border-style: solid;
+	background-color: #FFFFFF;
 }
 
 #header
 {
-	padding-left: 10px;
-	padding-top: 5px;
+    border-width: 2px;
+    border-color: #0091C4;
+    border-style: solid;
+    padding: 10px;
+    text-align: center;
+}
+
+#header-outside
+{
+    border-width: 2px;
+    border-color: #000000;
+    border-style: solid;
+    padding: 2px;
 }
 
 #menu
 {
-	width: 100%;
-	background-color: #DDDDDD;
+	width: 200px;
+	background-color: #FFFFFF;
 	border-width: 1px;
 	border-color: #000000;
 	border-style: solid;
 	border-left: 0;
 	border-right: 0;
+    border-top: 0;
 	padding: 0;
 	float: left;
 }
 
 #menu ul
 {
-	/*list-style: none;*/
+	list-style: none;
 	padding: 0;
 	margin: 0;
 }
 
 #menu li
 {
-	padding: 3px 25px 3px 25px;
+	padding: 3px;
 	border-right: 1px solid #000000;
-	float: left;
+	/*float: left;*/
 	text-decoration: none;
+    padding: 5px;
+    border-width: 2px;
+    border-color: #0091C4;
+    border-style: solid;
+    border-top: 0;
+}
+
+#menu div
+{
+    padding: 5px;
+    border-width: 2px;
+    border-color: #000000;
+    border-style: solid;
 }
 
 #menu a
