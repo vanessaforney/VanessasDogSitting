@@ -17,9 +17,18 @@
         $css = $site_path . "/style/" . $style . "/" . $style . ".css";
     }
     $image_dir = $site_path . "/style/" . $style . "/images";
-    
-    $path = explode("/", $_SERVER['ORIG_PATH_INFO']);
-    echo "<!--" . $_SERVER['ORIG_PATH_INFO'] . "-->";
+
+
+    if (isset($_SERVER['ORIG_PATH_INFO']))
+    {
+        $path_info = $_SERVER['ORIG_PATH_INFO'];
+    }
+    else
+    {
+        $path_info = $_SERVER['PATH_INFO'];
+    }
+    $path = explode("/", $path_info);
+    echo "<!--" . $path_info . "-->";
     array_shift($path);
 
     
@@ -29,7 +38,7 @@
         $page_title = $main_pages[$page_id];
         $page_path = implode("/", $path);
     }
-    else if ($_SERVER['ORIG_PATH_INFO'] == "")
+    else if ($path_info == "")
     {
         $page_id = "home";
         $page_title = $main_pages[$page_id];
