@@ -81,7 +81,6 @@ a:hover
     border-width: 2px;
     border-color: #0091C4;
     border-style: solid;
-    border-top: 0;
 }
 
 #menu div
@@ -90,6 +89,7 @@ a:hover
     border-width: 2px;
     border-color: #000000;
     border-style: solid;
+    border-top: 0;
 }
 
 #menu a
