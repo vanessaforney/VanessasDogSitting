@@ -28,7 +28,6 @@
         $path_info = $_SERVER['PATH_INFO'];
     }
     $path = explode("/", $path_info);
-    echo "<!--" . $path_info . "-->";
     array_shift($path);
 
     
@@ -51,15 +50,10 @@
         $page_path = "";
     }
     
-    echo "<!--" . $page_id . "-->";
-    echo "<!--SERVER: ";
-    print_r($_SERVER);
-    echo "-->";
     function get_content()
     {
         
         global $texy, $main_pages, $path, $page_id, $page_title, $page_path;
-        echo "<!--" . $page_id . "-->";
         $texy_file = "pages/" . $page_path . "/" . $page_id . ".texy";
         if (file_exists($texy_file))
         {
@@ -70,7 +64,7 @@
 
     function generate_menu()
     {
-        global $texy, $main_pages, $index_path, $image_dir
+        global $texy, $main_pages, $index_path, $image_dir;
         $text = "/---div";
         foreach($main_pages as $page_id => $page_title)
         {
