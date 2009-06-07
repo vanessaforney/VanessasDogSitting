@@ -16,4 +16,7 @@
             generate_menu();
         ?>
 	</ul>
+    <div class="menu-below">
+        test
+    </div>
 </div>

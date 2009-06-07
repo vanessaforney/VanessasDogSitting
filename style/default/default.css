@@ -83,13 +83,23 @@ a:hover
     border-style: solid;
 }
 
-#menu div
+#menu ul div
 {
     padding: 5px;
     border-width: 2px;
     border-color: #000000;
     border-style: solid;
     border-top: 0;
+}
+
+#menu .menu-below
+{
+    clear: both;
+
+    border-width: 2px;
+    border-color: #000000;
+    border-style: solid;
+    border-bottom: 0;
 }
 
 #menu a
