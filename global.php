@@ -70,7 +70,7 @@
         {
             $text .= "/---div
             - [* " . $image_dir . "/" . $page_id . ".png *]:[" . $index_path . "/" . $page_id . "]
-            \---"
+            \---";
         }
         $text .= "\\---div";
         echo $text->process($text);
