@@ -100,6 +100,7 @@ a:hover
     border-color: #000000;
     border-style: solid;
     border-bottom: 0;
+    border-top: 0;
 }
 
 #menu a
@@ -107,17 +108,10 @@ a:hover
 	color: #000000;
 }
 
-#menu li:hover
+#menu li
 {
-	background-color: #999999;
-	text-decoration: underline;
-	font-weight: bold;
-	color: #FFFFFF;
-}
-
-#menu li:hover a
-{
-	color: #FFFFFF;
+    text-align: center;
+    vertical-align: center;
 }
 
 #body

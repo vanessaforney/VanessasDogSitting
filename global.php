@@ -67,4 +67,18 @@
             echo $texy->process($text);
         }
     }
+
+    function generate_menu()
+    {
+        global $texy, $main_pages, $index_path, $image_dir
+        $text = "/---div";
+        foreach($main_pages as $page_id => $page_title)
+        {
+            $text .= "/---div
+            - [* " . $image_dir . "/" . $page_id . ".png *]:[" . $index_path . "/" . $page_id . "]
+            \---"
+        }
+        $text .= "\\---div";
+        echo $text->process($text);
+    }
 ?>
