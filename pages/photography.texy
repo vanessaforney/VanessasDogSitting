@@ -1,3 +1,4 @@
 Photography
 ===========
 
+<?php echo $image_dir; ?>

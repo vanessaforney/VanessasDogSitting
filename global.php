@@ -37,7 +37,7 @@
         $page_title = $main_pages[$page_id];
         $page_path = implode("/", $path);
     }
-    else if ($path_info == "")
+    else if ($path_info == "" || $path_info == "/")
     {
         $page_id = "home";
         $page_title = $main_pages[$page_id];
