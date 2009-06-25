@@ -55,6 +55,7 @@
         if (is_file($filename))
         {
             ob_start();
+            include_once $site_path . "/global.php";
             include $filename;
             $contents = ob_get_contents();
             ob_end_clean();
@@ -70,7 +71,7 @@
         $texy_file = "pages/" . $page_path . "/" . $page_id . ".texy";
         if (file_exists($texy_file))
         {
-            $text = "<?php include_once(\"global.php\"); ?>" . get_include_contents($texy_file);
+            $text = get_include_contents($texy_file);
             echo $texy->process($text);
         }
     }
