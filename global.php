@@ -70,7 +70,7 @@
         $texy_file = "pages/" . $page_path . "/" . $page_id . ".texy";
         if (file_exists($texy_file))
         {
-            $text = get_include_contents($texy_file);
+            $text = "<?php include_once(\"global.php\"); ?>" . get_include_contents($texy_file);
             echo $texy->process($text);
         }
     }
