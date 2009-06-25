@@ -102,6 +102,9 @@ a:hover
     border-left-width: 4px;
     border-left-color: #000000;
     border-left-style: solid;
+    border-right-width: 4px;
+    border-right-color: #000000;
+    border-right-style: solid;
     padding-bottom: 10px;
 }
 
@@ -208,17 +211,17 @@ table.calender .day
 img.right
 {
     float: right;
-    margin: 5px;
-    border-width: 1px;
+    margin: 10px;
+    border-width: 2px;
     border-style: solid;
     border-color: #000000;
 }
 
 img.left
 {
-    float: right;
-    margin: 5px;
-    border-width: 1px;
+    float: left;
+    margin: 10px;
+    border-width: 2px;
     border-style: solid;
     border-color: #000000;
     /*margin-left: 5px;*/
