@@ -1,0 +1,6 @@
+AcceptPathInfo On
+
+DirectoryIndex home
+RewriteEngine on
+RewriteBase /
+RewriteRule !^/*(images|style|ds\.php) ds.php%{REQUEST_URI} [L]

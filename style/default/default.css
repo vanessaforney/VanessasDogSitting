@@ -17,7 +17,7 @@ a
 {
 	text-decoration: none;
 	font-weight: bold;
-	color: #000000;
+    color: #0091C4;
 }
 
 a:hover
@@ -35,7 +35,7 @@ a:hover
 
 #header
 {
-    border-width: 2px;
+    border-width: 4px;
     border-color: #0091C4;
     border-style: solid;
     padding: 10px;
@@ -44,22 +44,16 @@ a:hover
 
 #header-outside
 {
-    border-width: 2px;
+    border-width: 4px;
     border-color: #000000;
     border-style: solid;
-    padding: 2px;
+    padding: 5px;
 }
 
 #menu
 {
 	width: 200px;
 	background-color: #FFFFFF;
-	border-width: 1px;
-	border-color: #000000;
-	border-style: solid;
-	border-left: 0;
-	border-right: 0;
-    border-top: 0;
 	padding: 0;
 	float: left;
 }
@@ -73,33 +67,20 @@ a:hover
 
 #menu li
 {
-	padding: 3px;
-	border-right: 1px solid #000000;
 	/*float: left;*/
 	text-decoration: none;
-    padding: 5px;
-    border-width: 2px;
+    padding: 6px;
+    border-width: 4px;
     border-color: #0091C4;
     border-style: solid;
 }
 
-#menu ul div
+#menu .li-outside
 {
     padding: 5px;
-    border-width: 2px;
+    border-width: 4px;
     border-color: #000000;
     border-style: solid;
-    border-top: 0;
-}
-
-#menu .menu-below
-{
-    clear: both;
-
-    border-width: 2px;
-    border-color: #000000;
-    border-style: solid;
-    border-bottom: 0;
     border-top: 0;
 }
 
@@ -116,8 +97,11 @@ a:hover
 
 #body
 {
-	padding: 10px;
-	margin-top: 25px;
+	padding-left: 210px;
+    border-left-width: 4px;
+    border-left-color: #000000;
+    border-left-style: solid;
+    padding-bottom: 10px;
 }
 
 #body .item
@@ -148,9 +132,46 @@ a:hover
     font-family: monospace;
 }
 
+table.calender
+{
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+table.calender td,th
+{
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000000;
+    width: 105px;
+}
+
+table.calender th
+{
+    font-size: 18pt;
+    background-color: #E4F9FF;
+    text-align: center;
+}
+
+table.calender .days
+{
+    font-weight: bold;
+    background-color: #97BBC7;
+}
+
+table.calender .days td
+{
+    text-align: center;
+}
+
+table.calender .day
+{
+    height: 100px;
+}
+
 #footer
 {
-	border-width: 2px;
+	border-width: 4px;
 	border-style: solid;
 	border-color: #0091C4;
 	padding: 5px;
@@ -163,10 +184,10 @@ a:hover
 
 #footer-outside
 {
-    margin-top: 15px;
-    border-width: 2px;
+    border-width: 4px;
     border-style: solid;
     border-color: #000000;
+    padding: 5px;
 }
 
 #logos
