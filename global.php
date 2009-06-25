@@ -50,6 +50,19 @@
         $page_path = "";
     }
 
+    function get_include_contents($filename)
+    {
+        if (is_file($filename))
+        {
+            ob_start();
+            include $filename;
+            $contents = ob_get_contents();
+            ob_end_clean();
+            return $contents;
+        }
+        return false;
+    }
+
     function get_content()
     {
 
@@ -57,7 +70,7 @@
         $texy_file = "pages/" . $page_path . "/" . $page_id . ".texy";
         if (file_exists($texy_file))
         {
-            $text = file_get_contents($texy_file);
+            $text = get_include_contents($texy_file);
             echo $texy->process($text);
         }
     }
