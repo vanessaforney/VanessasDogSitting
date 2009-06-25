@@ -60,8 +60,8 @@
         if (is_file($filename))
         {
             ob_start();
-            include_once $site_path . "/global.php";
-            include $filename;
+            include_once("global.php");
+            include($filename);
             $contents = ob_get_contents();
             ob_end_clean();
             return $contents;

@@ -1,4 +1,4 @@
 Photography
 ===========
 
-<?php echo $image_dir; ?>
+[* <?php image("chase4suz.jpg"); ?> <]
