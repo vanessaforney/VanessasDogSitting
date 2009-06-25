@@ -60,7 +60,7 @@
         if (is_file($filename))
         {
             ob_start();
-            include_once("global.php");
+            include("global.php");
             include($filename);
             $contents = ob_get_contents();
             ob_end_clean();
