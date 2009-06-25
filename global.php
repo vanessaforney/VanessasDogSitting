@@ -1,7 +1,7 @@
 <?php
     require_once("texy/texy.php");
 
-    $main_pages = array("home" => "Home", "aboutme" => "About Me", "satisfied_clients" => "Satisfied Clients", "calender" => "Calender", "rates" => "Rates", "contact_info" => "Contact Info", "not_found" => "Not Found");
+    $main_pages = array("home" => "Home", "aboutme" => "About Me", "satisfied_clients" => "Satisfied Clients", "photography" => "Photography", "rates" => "Rates", "contact_info" => "Contact Info", "not_found" => "Not Found");
     $style = "default";
     $site_path = "";
     $index_path = $site_path . "";
@@ -53,7 +53,7 @@
     function get_content()
     {
 
-        global $texy, $main_pages, $path, $page_id, $page_title, $page_path;
+        global $texy, $main_pages, $path, $page_id, $page_title, $page_path, $image_dir;
         $texy_file = "pages/" . $page_path . "/" . $page_id . ".texy";
         if (file_exists($texy_file))
         {
