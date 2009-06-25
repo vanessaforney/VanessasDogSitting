@@ -7,6 +7,7 @@
     $index_path = $site_path . "";
 
     $texy = new Texy();
+    $texy->imageModule->root = $site_path . "/images";
 
     if (isset($_GET["cssdebug"]) && $_GET["cssdebug"] == "true")
     {
@@ -50,25 +51,6 @@
         $page_path = "";
     }
 
-    function image($image_name)
-    {
-        return $site_path . "/images/" . $image_name;
-    }
-
-    function get_include_contents($filename)
-    {
-        if (is_file($filename))
-        {
-            ob_start();
-            include("global.php");
-            include($filename);
-            $contents = ob_get_contents();
-            ob_end_clean();
-            return $contents;
-        }
-        return false;
-    }
-
     function get_content()
     {
 
@@ -76,7 +58,7 @@
         $texy_file = "pages/" . $page_path . "/" . $page_id . ".texy";
         if (file_exists($texy_file))
         {
-            $text = get_include_contents($texy_file);
+            $text = file_get_contents($texy_file);
             echo $texy->process($text);
         }
     }
