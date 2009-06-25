@@ -17,7 +17,7 @@ a
 {
 	text-decoration: none;
 	font-weight: bold;
-	color: #000000;
+    color: #0091C4;
 }
 
 a:hover
@@ -27,47 +27,61 @@ a:hover
 
 #page
 {
-	width: 90%;
+	width: 1000px;
 	margin: auto;
 	margin-top: 25px;
-	background-color: #EFEFEF;
-	border-width: 1px;
-	border-color: #000000;
-	border-style: solid;
+	background-color: #FFFFFF;
 }
 
 #header
 {
-	padding-left: 10px;
-	padding-top: 5px;
+    border-width: 4px;
+    border-color: #0091C4;
+    border-style: solid;
+    padding: 10px;
+    text-align: center;
+}
+
+#header-outside
+{
+    border-width: 4px;
+    border-color: #000000;
+    border-style: solid;
+    padding: 5px;
 }
 
 #menu
 {
-	width: 100%;
-	background-color: #DDDDDD;
-	border-width: 1px;
-	border-color: #000000;
-	border-style: solid;
-	border-left: 0;
-	border-right: 0;
+	width: 200px;
+	background-color: #FFFFFF;
 	padding: 0;
 	float: left;
 }
 
 #menu ul
 {
-	/*list-style: none;*/
+	list-style: none;
 	padding: 0;
 	margin: 0;
 }
 
 #menu li
 {
-	padding: 3px 25px 3px 25px;
-	border-right: 1px solid #000000;
-	float: left;
+	/*float: left;*/
 	text-decoration: none;
+    padding: 6px;
+    border-width: 4px;
+    border-color: #0091C4;
+    border-style: solid;
+}
+
+#menu .li-outside
+{
+    padding: 5px;
+    border-width: 4px;
+    border-color: #000000;
+    border-style: solid;
+    border-top: 0;
 }
 
 #menu a
@@ -75,23 +89,19 @@ a:hover
 	color: #000000;
 }
 
-#menu li:hover
+#menu li
 {
-	background-color: #999999;
-	text-decoration: underline;
-	font-weight: bold;
-	color: #FFFFFF;
-}
-
-#menu li:hover a
-{
-	color: #FFFFFF;
+    text-align: center;
+    vertical-align: center;
 }
 
 #body
 {
-	padding: 10px;
-	margin-top: 25px;
+	padding-left: 210px;
+    border-left-width: 4px;
+    border-left-color: #000000;
+    border-left-style: solid;
+    padding-bottom: 10px;
 }
 
 #body .item
@@ -122,17 +132,62 @@ a:hover
     font-family: monospace;
 }
 
+table.calender
+{
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+table.calender td,th
+{
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000000;
+    width: 105px;
+}
+
+table.calender th
+{
+    font-size: 18pt;
+    background-color: #E4F9FF;
+    text-align: center;
+}
+
+table.calender .days
+{
+    font-weight: bold;
+    background-color: #97BBC7;
+}
+
+table.calender .days td
+{
+    text-align: center;
+}
+
+table.calender .day
+{
+    height: 100px;
+}
+
 #footer
 {
-	border-top-width: 1px;
-	border-top-style: solid;
-	border-top-color: #000000;
+	border-width: 4px;
+	border-style: solid;
+	border-color: #0091C4;
 	padding: 5px;
 	text-align: center;
 	font-size: 10pt;
-	background-color: #DDDDDD;
+	background-color: #FFFFFF;
 	clear: both;
 	vertical-align: center;
+}
+
+#footer-outside
+{
+    border-width: 4px;
+    border-style: solid;
+    border-color: #000000;
+    padding: 5px;
 }
 
 #logos
