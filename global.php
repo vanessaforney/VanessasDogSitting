@@ -50,6 +50,11 @@
         $page_path = "";
     }
 
+    function image($image_name)
+    {
+        return $site_path . "/images/" . $image_name;
+    }
+
     function get_include_contents($filename)
     {
         if (is_file($filename))
